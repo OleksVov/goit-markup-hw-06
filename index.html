@@ -387,12 +387,16 @@
               </li>
             </ul>
           </div>
-          <div class="box-action">
+          <div class="signat-box">
              <p class="action">Підпишіться на розсилку</p>
-             <form name="signup-form" autocomplete="on" action="">
+             <form class="signat-form" name="signat-form" autocomplete="on">
               <label for="email">E-mail</label>
-             <input type="email" name="email" id="email">
-             <button>Підписатися</button>
+             <input class="signat-input" type="email" name="email" id="email">
+             <button class="button-signat">Підписатися
+              <svg class="airplane" width="24" height="24">
+                <use href="./images/symbol-defs1.svg#icon-icon-send"></use>
+              </svg>
+             </button>
              </form>
           </div>
         </div>
@@ -405,6 +409,20 @@
             <use href="./images/symbol-defs1.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form" action="">
+          <label for="text">Ім'я</label>
+          <input type="text" name="text" id="text">
+          <label for="phone-number">Телефон</label>
+          <input type="tel" name="phone-number" id="phone-number">
+          <label for="email-modal">Пошта</label>
+          <input type="email" name="email-modal" id="email-modal">
+          <label for="annotation">Коментар</label>
+          <textarea name="annotation" id="annotation" cols="30" rows="10"></textarea>
+          </form>
+          <input type="checkbox" name="accept" value="accept" id="accept">
+          <label for="accept">Погоджуюся з розсилкою та приймаю Умови договору</label>
+          <button class="modal-button">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
