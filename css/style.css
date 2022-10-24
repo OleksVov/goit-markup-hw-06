@@ -706,17 +706,7 @@ img {
 .modal-button:focus {
   background-color: var(--btn-hover-color);
 }
-.modal-textarea {
-  resize: none;
-  padding: 12px 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
+
 .modal-item {
   position: relative;
   margin-bottom: 28px;
@@ -758,10 +748,29 @@ img {
 }
 .modal-input:focus + .modal-label,
 .modal-input:not(:placeholder-shown) + .modal-label {
-  transform: translate(-43px, -34px);
+  transform: translate(-43px, -36px);
 }
 .modal-input:focus ~ .modal-icon {
   fill: var(--accent-text-color);
+}
+.modal-textarea {
+  resize: none;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.modal-label-text {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 .field-checkbox {
   display: flex;
