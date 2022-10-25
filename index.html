@@ -397,10 +397,15 @@
           <div class="signat-box">
             <p class="action">Підпишіться на розсилку</p>
             <form class="signat-form" name="signat-form" autocomplete="on">
-              <label>
-                <input class="signat-input" type="email" name="email" placeholder="E-mail" />
-              </label>
-              <button class="button-signat">
+              <input
+                class="signat-input"
+                type="email"
+                name="email"
+                id="signat-email"
+                placeholder="E-mail"
+              />
+              <label for="signat-email" class="visually-hidden">Пошта</label>
+              <button type="submit" class="button-signat">
                 Підписатися
                 <svg class="airplane" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
@@ -423,8 +428,14 @@
         <form class="modal-form" name="modal-form" autocomplete="on">
           <ul class="modal-list list">
             <li class="modal-item">
-              <input type="text" class="modal-input" name="text" id="text" placeholder=" " />
-              <label for="text" class="modal-label">Ім'я</label>
+              <input
+                type="text"
+                class="modal-input"
+                name="person-name"
+                id="person-name"
+                placeholder=" "
+              />
+              <label for="person-name" class="modal-label">Ім'я</label>
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#person-black-18dp"></use>
               </svg>
@@ -456,23 +467,30 @@
               </svg>
             </li>
           </ul>
-          <label for="annotation" class="modal-label-text">Коментар</label>
+          <label for="annotation" class="modal-label-comment">Коментар</label>
           <textarea
             name="annotation"
-            class="modal-textarea"
+            class="modal-comment"
             id="annotation"
-            cols="30"
-            rows="10"
             placeholder="Введіть текст"
           ></textarea>
+          <div class="field-checkbox">
+            <input
+              type="checkbox"
+              class="modal-checkbox visually-hidden"
+              name="accept"
+              value="accept"
+              id="accept"
+            />
+            <svg class="checkbox-icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            <label for="accept" class="modal-label-checkbox"
+              >Погоджуюся з розсилкою та приймаю<a href="#"> Умови договору</a></label
+            >
+          </div>
+          <button type="submit" class="modal-button">Відправити</button>
         </form>
-        <div class="field-checkbox">
-          <input type="checkbox" class="modal-checkbox" name="accept" value="accept" id="accept" />
-          <label for="accept" class="modal-label-checkbox"
-            >Погоджуюся з розсилкою та приймаю<a href="#">Умови договору</a></label
-          >
-        </div>
-        <button class="modal-button">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
