@@ -405,7 +405,7 @@
                 placeholder="E-mail"
               />
               <label for="signat-email" class="visually-hidden">Пошта</label>
-              <button type="submit" class="button-signat">
+              <button type="submit" class="signat-button">
                 Підписатися
                 <svg class="airplane" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
@@ -424,7 +424,7 @@
             <use href="./images/symbol-defs1.svg#icon-close-black"></use>
           </svg>
         </button>
-        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form" name="modal-form" autocomplete="on">
           <ul class="modal-list list">
             <li class="modal-item">
@@ -467,26 +467,23 @@
               </svg>
             </li>
           </ul>
-          <label for="annotation" class="modal-label-comment">Коментар</label>
+          <label for="annotation" class="modal-comment-label">Коментар</label>
           <textarea
             name="annotation"
             class="modal-comment"
             id="annotation"
             placeholder="Введіть текст"
           ></textarea>
-          <div class="field-checkbox">
-            <input
+          <div class="checkbox-field">
+            <label class="checkbox-label"
+              ><input
               type="checkbox"
-              class="modal-checkbox visually-hidden"
+              class="checkbox-input"
               name="accept"
               value="accept"
-              id="accept"
-            />
-            <svg class="checkbox-icon" width="16" height="15">
+            /><svg class="checkbox-icon" width="16" height="15">
                 <use href="./images/icons.svg#icon-check"></use>
-              </svg>
-            <label for="accept" class="modal-label-checkbox"
-              >Погоджуюся з розсилкою та приймаю<a href="#"> Умови договору</a></label
+              </svg>Погоджуюся з розсилкою та приймаю<a href="#" class="checkbox-link">Умови договору</a></label
             >
           </div>
           <button type="submit" class="modal-button">Відправити</button>
