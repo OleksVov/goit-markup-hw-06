@@ -808,6 +808,9 @@ img {
   background-color: var(--accent-text-color);
   fill-opacity: 1;
 }
+.checkbox-input:focus + .checkbox-icon {
+  border-color: var(--accent-text-color);
+}
 
 .checkbox-label {
   display: flex;
